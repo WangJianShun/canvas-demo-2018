@@ -45,7 +45,7 @@ function drawCircle(x, y, radius) {
 
 function drawLine(x1, y1, x2, y2) {
   context.beginPath();
-  
+
   context.moveTo(x1, y1) // 起点
   context.lineWidth = 4
   context.lineTo(x2, y2) // 终点
@@ -139,34 +139,34 @@ function listenToUser(canvas) {
       using = false
     }
   }
-red.onclick=function(){
-  context.strokeStyle='red'
-  red.classList.add('active')
-  green.classList.remove('active')
-  blue.classList.remove('active')
-  yellow.classList.remove('active')
-}
-green.onclick=function(){
-  context.strokeStyle='green'
-  red.classList.remove('active')
-  green.classList.add('active')
-  blue.classList.remove('active')
-  yellow.classList.remove('active')
-}
-blue.onclick=function(){
-  context.strokeStyle='blue'
-  red.classList.remove('active')
-  green.classList.remove('active')
-  blue.classList.add('active')
-  yellow.classList.remove('active')
-}
-yellow.onclick=function(){
-  context.strokeStyle='yellow'
-  red.classList.remove('active')
-  green.classList.remove('active')
-  blue.classList.remove('active')
-  yellow.classList.add('active')
-}
+  red.onclick = function () {
+    context.strokeStyle = 'red'
+    red.classList.add('active')
+    green.classList.remove('active')
+    blue.classList.remove('active')
+    yellow.classList.remove('active')
+  }
+  green.onclick = function () {
+    context.strokeStyle = 'green'
+    red.classList.remove('active')
+    green.classList.add('active')
+    blue.classList.remove('active')
+    yellow.classList.remove('active')
+  }
+  blue.onclick = function () {
+    context.strokeStyle = 'blue'
+    red.classList.remove('active')
+    green.classList.remove('active')
+    blue.classList.add('active')
+    yellow.classList.remove('active')
+  }
+  yellow.onclick = function () {
+    context.strokeStyle = 'yellow'
+    red.classList.remove('active')
+    green.classList.remove('active')
+    blue.classList.remove('active')
+    yellow.classList.add('active')
+  }
 
 
 }
